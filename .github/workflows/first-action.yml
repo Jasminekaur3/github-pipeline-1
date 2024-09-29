@@ -12,6 +12,10 @@ jobs:
       
       - name: Display files
         run: ls -ltr
+      - name: Create the file
+        run: touch file1
+      - name: Display create file
+        run: ls 
       
       - name: Print bye
         run: echo "Bye from GitHub Actions"
