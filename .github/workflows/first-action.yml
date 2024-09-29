@@ -1,13 +1,19 @@
 name: First Workflow
-on: workflow_dispatch   #event to trigger the workflow
+
+on: workflow_dispatch  # Event to trigger the workflow
+
 jobs:
   first-job:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest  # Fixed: 'runs-on' instead of 'runs on'
+    
     steps:
-      - name: print greeting.
+      - name: Print greeting
         run: echo "Welcome to GitHub Workflow"
-      - name: display files
+      
+      - name: Display files
         run: ls -ltr
-      - name: print bye
-        run: echo "Bye from Github Actions"
+      
+      - name: Print bye
+        run: echo "Bye from GitHub Actions"
+
       
